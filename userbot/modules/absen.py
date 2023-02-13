@@ -113,15 +113,15 @@ CMD_HELP.update(
 
     {
 
-        "salam": f"**Plugin : **`salam`\
+        "absen": f"**Plugin : **`absen`\
 
-        \n\n  •  **Syntax :** `{cmd}p`\
+        \n\n  •  **Syntax :** `{cmd}ab`\
 
-        \n  •  **Function : **Assalamualaikum Dulu Biar Sopan..\
+        \n  •  **Function : **Hallo semuanya sory baru nimbrung\
 
-        \n\n  •  **Syntax :** `{cmd}pe`\
+        \n\n  •  **Syntax :** `{cmd}aa`\
 
-        \n  •  **Function : **salam Kenal dan salam\
+        \n  •  **Function : **Hadir bang\
 
         \n\n  •  **Syntax :** `{cmd}l`\
 
