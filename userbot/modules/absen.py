@@ -4,25 +4,9 @@ from userbot import CMD_HANDLER as cmd
 
 from userbot import CMD_HELP
 
-from userbot.utils import edit_or_reply, man_cmd
+from userbot.utils import edit_or_reply, yan_cmd
 
-@man_cmd(pattern="p(?: |$)(.*)")
-
-async def _(event):
-
-    await event.client.send_message(
-
-        event.chat_id,
-
-        "**Assalamualaikum Dulu Biar Sopan**",
-
-        reply_to=event.reply_to_msg_id,
-
-    )
-
-    await event.delete()
-
-@man_cmd(pattern="pe(?: |$)(.*)")
+@yan_cmd(pattern="aa(?: |$)(.*)")
 
 async def _(event):
 
@@ -30,7 +14,7 @@ async def _(event):
 
         event.chat_id,
 
-        "**Assalamualaikum Warahmatullahi Wabarakatuh**",
+        "**Hadir bang**",
 
         reply_to=event.reply_to_msg_id,
 
@@ -38,31 +22,50 @@ async def _(event):
 
     await event.delete()
 
-@man_cmd(pattern="P(?: |$)(.*)")
-
-async def _(event):
-
-    me = await event.client.get_me()
-
-    xx = await edit_or_reply(event, f"**Haii Salken Saya {me.first_name}**")
-
-    sleep(2)
-
-    await xx.edit("**Assalamualaikum...**")
-
-@man_cmd(pattern="l(?: |$)(.*)")
+@yan_cmd(pattern="ab(?: |$)(.*)")
 
 async def _(event):
 
     await event.client.send_message(
 
-        event.chat_id, "**Wa'alaikumsalam**", reply_to=event.reply_to_msg_id
+        event.chat_id,
+
+        "**Hallo semuanya sory baru nimbrung**",
+
+        reply_to=event.reply_to_msg_id,
 
     )
 
     await event.delete()
 
-@man_cmd(pattern="a(?: |$)(.*)")
+@yan_cmd(pattern="ba(?: |$)(.*)")
+
+async def _(event):
+
+    await event.client.send_message(
+
+        event.chat_id,
+        f"**Haii Salken Saya {me.first_name} . Buat semuanya rajin-rajin ya nimbrung disini**")
+
+        reply_to=event.reply_to_msg_id,
+    
+    )
+
+    await event.delete()
+
+@yan_cmd(pattern="bc(?: |$)(.*)")
+
+async def _(event):
+
+    await event.client.send_message(
+
+        event.chat_id, "**hallo semuanya gw hadir kembali*", reply_to=event.reply_to_msg_id
+
+    )
+
+    await event.delete()
+
+@yan_cmd(pattern="yn(?: |$)(.*)")
 
 async def _(event):
 
@@ -74,17 +77,17 @@ async def _(event):
 
     await xx.edit("**Assalamualaikum**")
 
-@man_cmd(pattern="j(?: |$)(.*)")
+@yan_cmd(pattern="ny(?: |$)(.*)")
 
 async def _(event):
 
-    xx = await edit_or_reply(event, "**JAKA SEMBUNG BAWA GOLOK**")
+    xx = await edit_or_reply(event, "**WOYY ADMIN**")
 
     sleep(3)
 
     await xx.edit("**NIMBRUNG GOBLOKK!!!🔥**")
 
-@man_cmd(pattern="k(?: |$)(.*)")
+@yan_cmd(pattern="iy(?: |$)(.*)")
 
 async def _(event):
 
@@ -96,15 +99,15 @@ async def _(event):
 
     await xx.edit("**LU SEMUA NGENTOT 🔥**")
 
-@man_cmd(pattern="ass(?: |$)(.*)")
+@yan_cmd(pattern="iyan(?: |$)(.*)")
 
 async def _(event):
 
-    xx = await edit_or_reply(event, "**Salam Dulu Biar Sopan**")
+    xx = await edit_or_reply(event, "**Hai cewek cantik*")
 
     sleep(2)
 
-    await xx.edit("**السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ**")
+    await xx.edit("**pc yuk pc**")
 
 CMD_HELP.update(
 
